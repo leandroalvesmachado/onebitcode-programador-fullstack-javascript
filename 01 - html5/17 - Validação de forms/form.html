@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Encontre no Google</h1>
+    <form action="https://www.google.com/search">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="text" id="q" name="q" placeholder="Nasa, SpaceX" required>
+        <!-- <input type="number" id="q" name="q" placeholder="Nasa, SpaceX" min="10" max="12"> -->
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit" value="Pesquisar">
+    </form>
+</body>
+</html>
