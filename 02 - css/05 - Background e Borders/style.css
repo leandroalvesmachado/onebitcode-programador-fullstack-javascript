@@ -1,0 +1,23 @@
+li {
+    color: green;
+}
+
+h1 {
+    color: purple;
+    font-size: 50px;
+    /* Coloando bordar */
+    /* border-color: yellow;
+    border-width: 8px;
+    border-style: solid; */
+    /* Comando bordar resumido width, style, color */
+    border: 2px dashed orange;
+}
+
+body {
+    /* background-color: grey; */
+    background-image: url('space.jpg');
+    /* imagem não se repetir */
+    background-repeat: no-repeat;
+    /* se ajusta ao tamanho da pagina */
+    background-size: cover;
+}

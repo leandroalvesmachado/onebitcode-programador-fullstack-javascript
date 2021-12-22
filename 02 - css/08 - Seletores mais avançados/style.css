@@ -1,0 +1,34 @@
+/* Seleciona todos os elementos do documento e aplica */
+/* Ex: Aplicar uma borda a todos os elementos */
+* {
+}
+
+/* seletores descendentes */
+/* Ex: Aplica os estilos para os a que estão dentro dos li */
+li a {
+    color: red;
+}
+
+/* seletor filho */
+/* Ex: Todo a que for filho de um li irá receber o estilo */
+li > a {
+    color: blue;
+}
+
+/* seletor de adjacente */
+/* Ex: Aplica o estilo em um h4 que venha apos um h1 */
+h1 + h4 {
+    border: 4px dashed;
+}
+
+/* seletor de busca */
+/* Ex: Aplica o estilo em todo link que estiver dessa forma */
+a[href='/recibo'] {
+    color: orange;
+}
+
+/* Pseudo-classes */
+/* Ex: Aplica a cor purple no segundo elemento de cada lista (li) */
+li:nth-of-type(2) {
+    color: purple;
+}

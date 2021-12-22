@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planetas</title>
+    <style>
+        div {
+            color: blue;
+            border: 2px solid black;
+        }
+        /* os li ficam vermelhos devido a especificidade (pontuação) */
+        /* div ul li {
+            color: red;
+        } */
+
+        /* esse comando (inherit) informa que o ul deve herdar a borda do elemento pai (div) */
+        div ul {
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nesse caso, a div é o pai e os filhos o ul com li, herdaram a cor blue da div -->
+    <div>
+        <h1>Planetas</h1>
+        <ul>
+            <li>Terra</li>
+            <li>Marte</li>
+            <li>Júpiter</li>
+        </ul>
+    </div>
+</body>
+</html>
