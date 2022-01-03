@@ -1,12 +1,13 @@
 // utilizando variaveis no sass
 $btn-color: #ff4043;
+$width-btn: 75px;
 
 .btn1 {
-    width: 70px;
+    width: $width-btn;
     background-color: $btn-color;
 }
 
 .btn2 {
-    width: 80px;
+    width: $width-btn;
     background-color: $btn-color;
 }

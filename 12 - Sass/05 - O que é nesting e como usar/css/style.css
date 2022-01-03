@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*
+
+Equivalente ao código acima
+Quando o css for gerado, será no formado de css
+
+.classe1 ul {
+  background-color: red; }
+.classe1 li {
+  background-color: blue; }
+
+  */
+.classe1 ul {
+  background-color: red; }
+.classe1 li {
+  background-color: blue;
+  padding: 10px 0px; }
+.classe1 button {
+  background-color: green;
+  color: white;
+  cursor: pointer; }
+  .classe1 button:hover {
+    background-color: red;
+    transition: 500ms; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+// .classe1 ul {
+//     background-color: red;
+// }
+
+// .classe1 li {
+//     background-color: blue;
+// }
+
+
+/*
+
+Equivalente ao código acima
+Quando o css for gerado, será no formado de css
+
+.classe1 ul {
+  background-color: red; }
+.classe1 li {
+  background-color: blue; }
+
+  */
+.classe1 {
+    ul {
+        background-color: red;
+    }
+
+    li {
+        background-color: blue;
+        padding: 10px 0px;
+    }
+
+    button {
+        background-color: green;
+        color: white;
+        cursor: pointer;
+
+        // faz referência ao elemento pai, no caso o button
+        // equivalente a button:hover
+        &:hover {
+            background-color: red;
+            transition: 500ms;
+        }
+    }
+}
