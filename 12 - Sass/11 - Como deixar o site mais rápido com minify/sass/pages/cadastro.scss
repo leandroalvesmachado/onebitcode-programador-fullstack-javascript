@@ -1,0 +1,8 @@
+#cadastro-text {
+    // font-family: sans-serif;
+    // font-size: 16px;
+    // color: red;
+
+    // utilizando mixin
+    @include text-style(red, 16px, sans-serif)
+}
