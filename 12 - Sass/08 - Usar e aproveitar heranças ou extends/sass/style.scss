@@ -1,0 +1,26 @@
+.btn {
+    width: 125px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+
+    // herança para id
+    &#btn-roxo {
+        background-color: purple;
+        color: white;
+    }
+
+    // herança para classe
+    &.btn-amarelo {
+        background-color: yellow;
+    }
+}
+
+// extends
+.btn-azul {
+    // extendendo da classe .btn
+    @extend .btn;
+    background-color: blue;
+    color: white;
+}

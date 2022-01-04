@@ -1,0 +1,26 @@
+// criando mixin, tipo uma função
+@mixin text-style($color, $font-size, $font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+$primary-color: #ff4043;
+
+// usando nesting
+.texts {
+    h1 {
+        // color: #ff4043;
+        // font-size: 34px;
+        // font-family: Arial;
+        // alterando para o uso do mixin
+        @include text-style($primary-color, 34, Arial);
+    }
+
+    p {
+        // color: blue;
+        // font-size: 22px;
+        // font-family: sans-serif;
+        @include text-style(blue, 22, sans-serif);
+    }
+}
