@@ -1,4 +1,4 @@
-let departureDateEntry = prompt("Digie a data de partida (formato DD/MM/YYYY)")
+let departureDateEntry = prompt("Digite a data de partida (formato DD/MM/YYYY)")
 
 let departureDate = moment(departureDateEntry, "DD/MM/YYYY")
 
