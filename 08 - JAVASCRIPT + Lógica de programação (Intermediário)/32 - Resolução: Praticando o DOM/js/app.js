@@ -1,0 +1,38 @@
+class App {
+    addProperty() {
+        event.preventDefault()
+        let kind = document.querySelector("select[name='kind']").value
+        let area = document.querySelector("input[name='area']").value
+        let rented = document.querySelector("input[name='rented']").checked
+        
+        let property = new Property(kind, area, rented)
+        this.addOnPropertiesList(property)
+        this.cleanForm()
+    }
+
+    addOnPropertiesList(property) {
+        let listElement = document.createElement("li")
+        let propertyInfo = "Tipo: " + property.kind + " (Área: " + property.area + " m²)"
+        
+        if (property.rented) {
+            let rentedMark = this.createRentedMark()
+            listElement.appendChild(rentedMark)
+        }
+
+        listElement.innerHTML += propertyInfo
+
+        let buttonToRemove = this.createRemoveButton()
+
+        listElement.appendChild(buttonToRemove)
+
+        document.getElementById("properties").appendChild(listElement)
+    }
+
+    createRentedMark() {
+
+    }
+
+    createRemoveButton() {
+        
+    }
+}
