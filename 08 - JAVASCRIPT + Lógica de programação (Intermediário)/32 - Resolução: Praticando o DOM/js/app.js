@@ -29,10 +29,29 @@ class App {
     }
 
     createRentedMark() {
+        let rentedMark = document.createElement("span")
+        rentedMark.style.color = "white"
+        rentedMark.style.backgroundColor = "red"
+        rentedMark.innerText = "ALUGADO"
 
+        return rentedMark
     }
 
     createRemoveButton() {
-        
+        let buttonToRemove = document.createElement("button")
+        buttonToRemove.setAttribute("onclick", "app.remove()")
+        buttonToRemove.innerText = "Remover"
+
+        return buttonToRemove
+    }
+
+    cleanForm() {
+        document.querySelector("input[name='area']").value = ""
+        document.querySelector("input[name='rented']").checked = false
+    }
+
+    remove() {
+        let liToRemove = event.target.parentNode
+        document.getElementById("properties").removeChild(liToRemove)
     }
 }
